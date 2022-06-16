@@ -1,3 +1,9 @@
+Small film site project I built to begin learning React development.  I utilized a third party API as the primary backbone of the application, and though not my first time integrating third party API's, it was super helpful for me in solidifying their use. Happy with how it has initially turned out!  Planning to flush it out a bit more down the line with login capabilities and more.
+
+
+----------------------
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
