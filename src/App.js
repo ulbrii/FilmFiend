@@ -1,5 +1,6 @@
 // Utilizing specified React hook
 import { useEffect, useState } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
 // Importing card component from separate jsx sheet
 import MovieCard from './MovieCard';
@@ -33,33 +34,35 @@ const App = () => {
 	}, []);
 
 	return (
-		<div className="app">
-            
-			<h1>FilmFiend</h1>
+		<BrowserRouter basename='/FilmFiend'>
+			<div className="app">
+				
+				<h1>FilmFiend</h1>
 
-			{/* Search Bar */}
-			<div className="search">
-				<input placeholder="Search for movies" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
-				<img src={SearchIcon} alt="search" onClick={() => searchMovies(searchTerm)} />
+				{/* Search Bar */}
+				<div className="search">
+					<input placeholder="Search for movies" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+					<img src={SearchIcon} alt="search" onClick={() => searchMovies(searchTerm)} />
+				</div>
+				{/* Search Bar */}
+				
+				{/* Movie Card */}
+				{movies?.length > 0
+					? (
+						<div className='container'>
+							{movies.map((movie) => (
+								<MovieCard movie={movie} />
+							))}
+						</div>
+					) : (
+						<div className='empty'>
+							<h2>No movies found</h2>
+						</div>
+				)}
+				{/* Movie Card */}
+					
 			</div>
-			{/* Search Bar */}
-			
-			{/* Movie Card */}
-            {movies?.length > 0
-                ? (
-                    <div className='container'>
-                        {movies.map((movie) => (
-                            <MovieCard movie={movie} />
-                        ))}
-                    </div>
-                ) : (
-                    <div className='empty'>
-                        <h2>No movies found</h2>
-                    </div>
-            )}
-			{/* Movie Card */}
-                
-		</div>
+		</BrowserRouter>
 	);
 };
 
