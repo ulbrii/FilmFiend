@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/FilmFiend/static/css/main.58e1373c.css",
-    "main.js": "/FilmFiend/static/js/main.4fd99482.js",
+    "main.js": "/FilmFiend/static/js/main.eff44064.js",
     "index.html": "/FilmFiend/index.html",
     "static/media/search.svg": "/FilmFiend/static/media/search.981b582ea232c3cb047eca919deaf9e8.svg",
     "main.58e1373c.css.map": "/FilmFiend/static/css/main.58e1373c.css.map",
-    "main.4fd99482.js.map": "/FilmFiend/static/js/main.4fd99482.js.map"
+    "main.eff44064.js.map": "/FilmFiend/static/js/main.eff44064.js.map"
   },
   "entrypoints": [
     "static/css/main.58e1373c.css",
-    "static/js/main.4fd99482.js"
+    "static/js/main.eff44064.js"
   ]
 }
