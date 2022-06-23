@@ -1,6 +1,5 @@
 // Utilizing specified React hook
 import { useEffect, useState } from 'react';
-import { BrowserRouter } from 'react-router-dom';
 
 // Importing card component from separate jsx sheet
 import MovieCard from './MovieCard';
@@ -34,9 +33,7 @@ const App = () => {
 	}, []);
 
 	return (
-		<BrowserRouter basename='/FilmFiend'>
 			<div className="app">
-				
 				<h1>FilmFiend</h1>
 
 				{/* Search Bar */}
@@ -62,7 +59,6 @@ const App = () => {
 				{/* Movie Card */}
 					
 			</div>
-		</BrowserRouter>
 	);
 };
 
